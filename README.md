@@ -1,4 +1,4 @@
-# PRIVI Front-end
+# Dreem Metaverse Front-end
 
 ```
 
@@ -116,8 +116,6 @@ $ git checkout sergi
 ATTENTION! 'sergi' is an example. Please use your branch and not Sergi's one 😃
 
 ## Testing
-
-Tests TBD
 
 ```sh
 $ yarn test
