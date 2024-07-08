@@ -1,0 +1,157 @@
+import { makeStyles } from "@material-ui/core";
+
+export const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: "#0B151C !important",
+    boxShadow: "0px 38px 96px 17px rgba(1, 1, 13, 0.25)",
+    borderRadius: "0 !important",
+    color: "white !important",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "66px 59px !important",
+    width: "682px !important",
+    maxWidth: "unset !important",
+    [theme.breakpoints.down("sm")]: {
+      width: "550px !important",
+      padding: "47px 24px !important",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "343px !important",
+      padding: "47px 16px !important",
+    },
+    "& > svg path": {
+      stroke: "white",
+    },
+  },
+  title: {
+    fontFamily: "GRIFTER",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "24px",
+    lineHeight: "120%",
+    textAlign: "center",
+    color: "#E9FF26",
+    letterSpacing: "0.02em",
+    marginBottom: 8,
+    textTransform: "uppercase",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 18,
+      marginBottom: 8,
+    },
+  },
+  description: {
+    fontFamily: "Rany",
+    fontStyle: "normal",
+    fontWeight: 500,
+    fontSize: "16px",
+    lineHeight: "160%",
+    textAlign: "center",
+    marginBottom: 26,
+    [theme.breakpoints.down("xs")]: {
+      marginBottom: 21,
+    },
+  },
+  alert: {
+    fontFamily: "Rany",
+    fontStyle: "normal",
+    fontWeight: 500,
+    fontSize: "16px",
+    lineHeight: "160%",
+    textAlign: "center",
+    color: "#E9FF26",
+    cursor: "pointer",
+    textDecorationLine: "underline",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 14,
+    },
+  },
+  back: {
+    position: "absolute",
+    top: 24,
+    left: 24,
+    cursor: "pointer",
+  },
+  divider: {
+    width: 300,
+    height: 1,
+    background: "rgba(0, 0, 0, 0.05)",
+    marginTop: 10,
+    marginBottom: 50,
+  },
+  qrcodeBox: {
+    border: "1px solid rgba(84, 101, 143, 0.3)",
+    borderRadius: 28,
+    width: 452,
+    height: 452,
+  },
+  "@keyframes circular-rotate": {
+    from: {
+      WebkitTransform: "rotate(0deg)",
+    },
+    to: {
+      WebkitTransform: "rotate(360deg)",
+    },
+  },
+  circleProgress: {
+    WebkitAnimation: "$circular-rotate 1.4s linear infinite",
+    animation: "$circular-rotate 1.4s linear infinite",
+    MozAnimation: "$circular-rotate 1.4s linear infinite",
+  },
+  disabled: {
+    opacity: 0.3,
+    border: "1px solid #2D3047 !important",
+    cursor: "default !important",
+    "&:hover": {
+      opacity: "0.3 !important",
+      border: "1px solid #2D3047 !important",
+    },
+  },
+  button: {
+    position: "relative",
+    border: "1px solid #CCD1DE",
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "38px 40px",
+    fontFamily: "Rany",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "22px",
+    lineHeight: "130%",
+    transition: "opacity 0.1s ease",
+    "&:hover": {
+      opacity: 0.8,
+      border: "1px solid #2D3047",
+    },
+    "&:active": {
+      opacity: 0.5,
+    },
+    "& > .icon": {
+      position: "absolute",
+      left: 0,
+      top: 0,
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      alignItems: "center",
+      paddingLeft: 37,
+      [theme.breakpoints.down("xs")]: {
+        fontSize: "16px",
+        padding: "12px 16px",
+        position: "relative",
+        paddingLeft: 0,
+        width: "unset",
+      },
+    },
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+    },
+    [theme.breakpoints.down("xs")]: {
+      justifyContent: "center",
+      fontSize: "22px",
+      padding: "24px 16px",
+    },
+  },
+}));

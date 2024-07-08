@@ -1,0 +1,65 @@
+import { makeStyles } from "@material-ui/core/styles";
+
+export const useCardStyles = makeStyles(theme => ({
+  card: {
+    position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    padding: "30px 10px 0px",
+    width: 320,
+  },
+  container: {
+    flex: 1,
+    position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    padding: "0px 20px",
+  },
+  image: {
+    width: "144px",
+    height: "144px",
+    left: "0px",
+    top: "-48px",
+    filter: "drop-shadow(0px 11px 9px rgba(0, 0, 0, 0.25))",
+  },
+  filterBg: {
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    width: "100%",
+    height: "calc(100% - 17px)",
+    background: "rgba(0, 0, 0, 0.6)",
+    borderRadius: "4px",
+  },
+
+  typo1: {
+    fontFamily: "Rany",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "12px",
+    lineHeight: "100%",
+    letterSpacing: "0.02em",
+    textTransform: "uppercase",
+    color: "#FFFFFF",
+    opacity: "0.5",
+  },
+  typo2: {
+    fontFamily: "GRIFTER",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "18px",
+    lineHeight: "100%",
+    letterSpacing: "0.02em",
+    textTransform: "capitalize",
+    color: "#FFFFFF",
+  },
+  typo3: {
+    fontFamily: "Rany",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "14px",
+    lineHeight: "155%",
+    color: "#FFFFFF",
+    opacity: "0.8",
+  },
+}));
